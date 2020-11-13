@@ -1,0 +1,197 @@
+:root{
+    --color: #313131;
+    --color-deep:#141313;
+    --color-2:#040404;
+    --color-3:#898989;
+    --color-white: #ffffff;
+    --general-font-size:14px;
+    --font-size:12px;
+    --font-16:16px;
+    --font-18:18px;  
+    --font-15:15px;
+    --font-22:22px;
+    -summary-font-size:13px;
+    --primary-font-family: "Sofia Pro";
+    --primary-color: #ba3326;
+    --primary-bg:#ba3326;
+    --primary-bg-deep:#7d150b;
+    --sub_MENU-hover:rgb(212 99 99 / 20%);
+    --light-color:#716e6e;
+
+}
+a{
+    color:inherit
+}
+a:hover{
+    color:inherit;
+    text-decoration: none;
+}
+@font-face{
+    font-family: "Sofia Pro";
+    src: url("/public/fonts/HKGrotesk/HKGroteskPro-Medium.woff")
+}
+
+body{
+    font-size: var(--general-font-size);
+    font-family: var(--primary-font-family);
+    color: var(--color)
+}
+:hover{
+    transition: all .3s ease-in-out;
+}
+.sub-menu a{
+    font-weight: 600;
+    color: var(--color)
+}
+.sub-menu a:hover{
+    color: var(--primary-color);
+    text-decoration: none;
+}
+.semi_MENU ul li:hover{
+    background: var(--sub_MENU-hover)
+}
+.semi_MENU ul li{
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.primary-color{
+    color:var(--primary-color)
+}
+.channel-banner{
+    height:calc((100vw - 200px) / 6.2 - 1px);
+background: gold;
+border-radius: 20px !important
+}
+.owners_PROFILE{
+    min-width:70px;
+    height: 70px;
+    background: url("/assets/img/use.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.active::after,.sub-menu li a:after{
+    width: 100%;
+    height: 2px;
+    content: "";
+    bottom: 0;
+    position:absolute;
+    left: 0;
+    background: var(--primary-color)
+}
+.sub-menu li a::after{
+    transition: transform .3s ease-in-out;
+        transform: scaleX(0)
+    }
+.sub-menu li a:hover::after{
+transition: transform .3s ease-in-out;
+transform: scaleX(1)
+}
+.active::after:hover{
+    transform: scaleX(1);
+
+}
+.active{
+    color: var(--primary-color) !important;
+   }
+   .subscriber_INFO{
+       color: var(--light-color);
+       font-size: (--font-12)
+   }
+   .channel-name.sub-SEMI_title{
+   font-size: var(--font-22);
+   color: var(--color-deep);
+   }
+   .btn-colored-curve{
+       background: var(--primary-bg);
+       border-radius: 20px;
+       padding: 3px 30px;
+       font-size: var(--general-font-size);
+       color: var(--color-white)
+   }
+.semi_MENU{
+    color: var(--light-color)
+}
+   .btn-colored-curve:hover{
+       background: var(--primary-bg-deep);
+       color: var(--color-white)
+   }
+   .notification_BELL{
+       width:26px;
+   }
+   .sub-menu li a.active::after{
+       transform: scaleX(1)
+   }
+
+   .profile-pic{
+       background: url("/assets/img/use.jpg");
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       border-radius: 50%;
+       
+   }
+   .recommendations  .profile-pic{
+    width: 40px;
+    height: 40px;
+   }
+   .subbscribed-channel .profile-pic{
+    min-width: 25px;
+    height: 25px;
+   }
+   .subbscribed-channel h1{
+       font-size:var(--general-font-size);
+       color:var(--color-deep)
+   }
+   .subbscribed-channel .channel_name div{
+    /* width: 150px;
+    max-width: 53%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+    position: relative */
+   }
+   .titlt_small{
+       font-size:var(--general-font-size);
+       align-items: center;
+       font-weight: 600;
+    color: var(--color);
+   }
+   .title-small{
+       font-size: var(--font-16);
+       color: var(--light-color)
+   }
+   .radius-20{
+       border-radius:20px;
+       background:gold;
+   }
+   .video_thumbnail{
+       height:200px;
+   }
+   .video_thumbnail.small {
+       width:200px;
+       height: 120px;
+   }
+   .v-title{
+    font-size:var(--font-16);
+    font-weight: 600;
+    color: var(--color-2);
+   }
+   .v-description{
+       color: var(--light-color);
+       display: flex;
+       text-overflow: ellipsis;
+       overflow: hidden;
+       /* height:20px; */
+   }
+   .v-description span{
+       width:5px;
+       height:5px;
+       border-radius:50%;
+       background: var(--light-color)
+   }
+   .color-2{
+       color: var(--color-3)
+   }
