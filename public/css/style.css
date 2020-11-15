@@ -1,9 +1,6 @@
 :root{
-    --color: #313131;
-    --color-deep:#141313;
-    --color-2:#040404;
-    --color-3:#898989;
-    --color-white: #ffffff;
+   
+   
     --general-font-size:14px;
     --font-size:12px;
     --font-16:16px;
@@ -12,12 +9,10 @@
     --font-22:22px;
     -summary-font-size:13px;
     --primary-font-family: "Sofia Pro";
-    --primary-color: #ba3326;
-    --primary-bg:#ba3326;
-    --primary-bg-deep:#7d150b;
-    --sub_MENU-hover:rgb(212 99 99 / 20%);
-    --light-color:#716e6e;
-
+   
+}
+body{
+  background-color: var(--theme-color)
 }
 a{
     color:inherit
@@ -38,6 +33,38 @@ body{
 }
 :hover{
     transition: all .3s ease-in-out;
+}
+.header{
+    position:fixed;
+    z-index:2;
+    color:var(--light-color);
+    box-shadow: 0 2px 7px gray;
+}
+.UPPER_search{
+  background-color: var(--upper-input-bg)
+}
+.UPPER_search ~ i{
+    right:20px;
+}
+.white-bg{
+  background-color: var(--white-bg)
+}
+.header i{
+    font-size:20px;
+}
+.Imge{
+    width:27px !important;
+    height:27px !important;
+    border-radius:50%;
+}
+.nav-right > div{
+  right: 0;
+}
+.nav-right nav span{
+width:7px;
+height:7px;
+right:-2px;
+background:var(--primary-bg)
 }
 .sub-menu a{
     font-weight: 600;
@@ -61,6 +88,26 @@ body{
     height:calc((100vw - 200px) / 6.2 - 1px);
 background: gold;
 border-radius: 20px !important
+}
+.menu-logo svg{
+    width: 90px !important;
+}
+.more_MENU{
+    /* height: 0; */
+}
+input,button{
+    outline: none;
+    border: none;
+}
+.y-center{
+    align-items: center;
+}
+.semi_MENU i{
+    font-size: 20px;
+}
+.menu-icon{
+    /* font-size: 30px;
+    font-weight: 200 ! */
 }
 .owners_PROFILE{
     min-width:70px;
@@ -127,15 +174,33 @@ transform: scaleX(1)
 
    .profile-pic{
        background: url("/assets/img/use.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       border-radius: 50%;
+       background-repeat: no-repeat !important;
+       background-size: cover !important;
+       background-position: center !important;
+       border-radius: 50% ;
        
    }
+   .transparent_blur{
+       background-color: rgb(0 0 0 /40%);
+       z-index: 2   ;
+       
+   }
+   .recommendations{
+       max-width: 208px;
+   }
    .recommendations  .profile-pic{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
+   }
+   .PreNext > div{
+       width: 40px;
+       height: 40px;
+       background: rosybrown;
+   }
+   .xANDyCenter{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) !important;
    }
    .subbscribed-channel .profile-pic{
     min-width: 25px;
@@ -165,19 +230,33 @@ transform: scaleX(1)
    }
    .radius-20{
        border-radius:20px;
-       background:gold;
    }
    .video_thumbnail{
-       height:200px;
+    height:200px;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+.video_thumbnail.small{
+    height:120px;
+    border-radius: 15px;
+}
+   .slide-container > div {
+       width:calc(100% - 82%) !important;
+       max-height: 100px;
    }
-   .video_thumbnail.small {
-       width:200px;
-       height: 120px;
+   .slide-container.recommended > div{
+      width:calc(100% - 63%) !important;
+       height: 200px;
    }
    .v-title{
-    font-size:var(--font-16);
+    font-size:var(--font-16);   
     font-weight: 600;
     color: var(--color-2);
+   }
+   .recommended .video_thumbnail{
+    height: 200px;
+    border-radius: 20px;
    }
    .v-description{
        color: var(--light-color);
@@ -185,6 +264,12 @@ transform: scaleX(1)
        text-overflow: ellipsis;
        overflow: hidden;
        /* height:20px; */
+   }
+   .menu-trigger{
+       max-width:90px;
+   }
+   .menu-trigger ul li span{
+display:none;   
    }
    .v-description span{
        width:5px;

@@ -1,0 +1,17 @@
+:root{
+ --color: #313131;
+    --color-deep:#141313;
+    --color-2:#ffffff;
+    --color-3:#898989;
+     --color-white: #ffffff;
+      --primary-color: #ba3326;
+    --primary-bg:#ba3326;
+    --primary-bg-deep:#7d150b;
+    --sub_MENU-hover:rgb(212 99 99 / 20%);
+    --light-color:#716e6e;
+    --white-bg: #18171f;
+    --upper-input-bg: #302f35;
+    --theme-color: #18171f !important;
+
+
+}

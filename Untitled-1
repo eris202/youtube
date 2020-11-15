@@ -1,0 +1,1 @@
+onclick="windowOut(this,document.querySelector('.semi_MENU'))"
